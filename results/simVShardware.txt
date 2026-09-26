@@ -1,0 +1,68 @@
+
+## RUN ON 26/09/2026, 14:55 ##
+
+Loaded Hamiltonian: 8 qubits, 4 electrons (n_alpha=2, n_beta=2), reference energy=-76.11669094458742
+
+n_reps=1: error=32.571 mHa, two-qubit depth=11, total depth=14
+n_reps=2: error=9.236 mHa, two-qubit depth=19, total depth=23
+n_reps=3: error=7.151 mHa, two-qubit depth=27, total depth=32
+
+Selected n_reps=3 (error=7.151 mHa, two-qubit depth=27)
+
+Pre-SQD (optimized LUCJ ansatz, n_reps=3) energy: -76.109540  (error 7.151 mHa)
+
+[simulator] unique sampled bitstrings: 15  (2q depth: 27, total depth: 32)
+[simulator] fraction of TOTAL SHOTS in correct sector: 1.0000
+[simulator] fraction of DISTINCT bitstrings that are valid: 1.0000
+[simulator] iter 0: energy=-76.114195  error=2.496 mHa
+[simulator] iter 1: energy=-76.114195  error=2.496 mHa
+[simulator] iter 2: energy=-76.114195  error=2.496 mHa
+[simulator] iter 3: energy=-76.114195  error=2.496 mHa
+[simulator] iter 4: energy=-76.114195  error=2.496 mHa
+/tmp/ipykernel_1940/2011446383.py:46: DeprecationWarning: The SamplerV2 class is deprecated as of qiskit-ibm-runtime 0.50.0 and will be removed no sooner than 3 months after the release date. `qiskit_ibm_runtime.executor_sampler.Sampler` provides a new Sampler implementation that runs all the pre- and post-processing in the client side. The top-level `qiskit_ibm_runtime.Sampler` import will be updated to point to the client-side sampler in an upcoming release, with the legacy Sampler being available until the deprecation is completed.
+  hw_sampler = SamplerV2(mode=backend)
+[hardware] backend name: ibm_fez
+[hardware] job ID: daroq5bg95ks73eelcog
+[hardware] physical qubit layout: [109, 110, 111, 112, 107, 106, 105, 104]
+[hardware] number of distinct raw bitstrings observed: 248
+[hardware] raw counts (first 5 entries): {'00110011': 3295, '00111011': 351, '11001010': 5, '10111111': 10, '00111000': 168}
+[hardware] saved run metadata to: /content/hardware_run_daroq5bg95ks73eelcog.json
+[hardware] saved backend calibration to: /content/calibration_daroq5bg95ks73eelcog.json
+[hardware] unique sampled bitstrings: 248  (2q depth: 60, total depth: 231)
+[hardware] fraction of TOTAL SHOTS in correct sector: 0.4788
+[hardware] fraction of DISTINCT bitstrings that are valid: 0.1452
+[hardware] iter 0: energy=-76.111916  error=4.775 mHa
+[hardware] iter 1: energy=-76.103284  error=13.407 mHa
+[hardware] iter 2: energy=-76.103713  error=12.978 mHa
+[hardware] iter 3: energy=-76.102575  error=14.116 mHa
+[hardware] iter 4: energy=-76.105223  error=11.467 mHa
+[simulator] n_shots=500: mean energy=-76.096860 +/- 0.007681  (mean error=19.831 mHa, n_seeds=5)
+[simulator] n_shots=1000: mean energy=-76.109336 +/- 0.000902  (mean error=7.355 mHa, n_seeds=5)
+[simulator] n_shots=2000: mean energy=-76.108980 +/- 0.004223  (mean error=7.711 mHa, n_seeds=5)
+[simulator] n_shots=5000: mean energy=-76.112139 +/- 0.000594  (mean error=4.552 mHa, n_seeds=5)
+[simulator] n_shots=10000: mean energy=-76.112963 +/- 0.000825  (mean error=3.728 mHa, n_seeds=5)
+[hardware] n_shots=500: mean energy=-76.099272 +/- 0.005205  (mean error=17.419 mHa, n_seeds=5)
+[hardware] n_shots=1000: mean energy=-76.102340 +/- 0.003079  (mean error=14.351 mHa, n_seeds=5)
+[hardware] n_shots=2000: mean energy=-76.106791 +/- 0.003456  (mean error=9.900 mHa, n_seeds=5)
+[hardware] n_shots=5000: mean energy=-76.107341 +/- 0.005547  (mean error=9.350 mHa, n_seeds=5)
+[hardware] n_shots=10000: mean energy=-76.108551 +/- 0.005380  (mean error=8.140 mHa, n_seeds=5)
+[simulator] valid unique configurations available for sweep: 15
+[simulator] samples_per_batch=5 (actual used=5): mean error=16.5769 mHa  (n_seeds=5)
+[simulator] samples_per_batch=10 (actual used=10): mean error=5.1027 mHa  (n_seeds=5)
+[simulator] samples_per_batch=15 (actual used=15): mean error=2.4956 mHa  (n_seeds=5)
+[simulator] samples_per_batch=20 (actual used=15): mean error=2.4956 mHa  (n_seeds=5)
+[simulator] samples_per_batch=25 (actual used=15): mean error=2.4956 mHa  (n_seeds=5)
+[simulator] samples_per_batch=30 (actual used=15): mean error=2.4956 mHa  (n_seeds=5)
+[simulator] samples_per_batch=36 (actual used=15): mean error=2.4956 mHa  (n_seeds=5)
+[hardware] valid unique configurations available for sweep: 36
+[hardware] samples_per_batch=5 (actual used=5): mean error=50.6426 mHa  (n_seeds=5)
+[hardware] samples_per_batch=10 (actual used=10): mean error=43.0927 mHa  (n_seeds=5)
+[hardware] samples_per_batch=15 (actual used=15): mean error=29.3513 mHa  (n_seeds=5)
+[hardware] samples_per_batch=20 (actual used=20): mean error=13.3260 mHa  (n_seeds=5)
+[hardware] samples_per_batch=25 (actual used=25): mean error=7.1887 mHa  (n_seeds=5)
+[hardware] samples_per_batch=30 (actual used=30): mean error=1.5604 mHa  (n_seeds=5)
+[hardware] samples_per_batch=36 (actual used=36): mean error=-0.0000 mHa  (n_seeds=5)
+Saved plot to batch_size_sweep.png
+Saved plot to before_after_sqd.png
+
+########################################################################################
