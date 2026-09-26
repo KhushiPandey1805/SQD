@@ -88,3 +88,21 @@ Credentials (IBM Quantum API token and instance CRN) are read from
 environment variables / prompted at runtime — never hardcoded or committed.
 See `.env` (gitignored) and the credentials cell in `simVShardware.ipynb`
 for how these are supplied.
+
+## References and acknowledgements
+ 
+- IBM Quantum, ["Sample-based quantum diagonalization of a chemistry
+  Hamiltonian"](https://quantum.cloud.ibm.com/docs/en/tutorials/sample-based-quantum-diagonalization)
+  — the N2 tutorial this project is based on (`ref/`).
+- IBM Quantum, ["Build a Qiskit Function for chemistry
+  simulation"](https://quantum.cloud.ibm.com/docs/en/guides/function-template-chemistry-workflow)
+  (`ref/`).
+- [`qiskit-addon-sqd`](https://github.com/Qiskit/qiskit-addon-sqd) —
+  configuration recovery, subsampling, and subspace diagonalization.
+- [`ffsim`](https://github.com/qiskit-community/ffsim) — the LUCJ ansatz
+  construction and fermionic circuit tools used here.
+- [Qiskit](https://www.ibm.com/quantum/qiskit) / `qiskit-ibm-runtime` for
+  circuit construction, transpilation, and hardware execution.
+- Thanks to Prof. Indrakshi Raychowdhury for supplying the Hamiltonian, hardware access
+  through her classroom account, and detailed feedback that shaped several
+  of this project's later weeks (see `weekly_reports/`).
