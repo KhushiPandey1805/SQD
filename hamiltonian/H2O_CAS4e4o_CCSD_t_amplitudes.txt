@@ -1,0 +1,31 @@
+# H2O CAS(4e,4o) closed-shell CCSD amplitudes from supplied FCIDUMP
+# PySCF/ffsim-compatible restricted spatial t1[i,a], t2[i,j,a,b].
+# Active spatial orbitals: 4; electrons: (2 alpha,2 beta). Reference: spatial orbitals 0,1 doubly occupied.
+# E_ref  = -76.063571670799988 Ha
+# E_CCSD = -76.116597049090004 Ha
+# E_exact= -76.116690944626455 Ha
+# CCSD-exact error = 0.093896 mHa
+# Solver converged=True; residual norm=3.851e-15; alpha-beta t1 max mismatch=1.232e-16
+# occupied i,j = 0,1; virtual a,b = 0,1 correspond to active spatial orbitals 2,3.
+
+t1 =
+[[-7.147959620241696e-03 -4.103518930699110e-08]
+ [-1.946204925148706e-07  7.823705364279810e-03]]
+
+t2 entries:
+t2[0,0,0,0] = -7.417965427404295e-02
+t2[0,0,0,1] = -6.901979622065491e-07
+t2[0,0,1,0] = -6.901979622065531e-07
+t2[0,0,1,1] = -2.121406637806260e-02
+t2[0,1,0,0] = -5.652589140979604e-07
+t2[0,1,0,1] =  5.622969740397889e-02
+t2[0,1,1,0] =  3.010038002138046e-02
+t2[0,1,1,1] =  6.075671191103424e-07
+t2[1,0,0,0] = -5.652589140979597e-07
+t2[1,0,0,1] =  3.010038002138061e-02
+t2[1,0,1,0] =  5.622969740397941e-02
+t2[1,0,1,1] =  6.075671191103400e-07
+t2[1,1,0,0] = -2.791959084199108e-02
+t2[1,1,0,1] =  6.695070280301347e-07
+t2[1,1,1,0] =  6.695070280301379e-07
+t2[1,1,1,1] = -7.467740460168305e-02
