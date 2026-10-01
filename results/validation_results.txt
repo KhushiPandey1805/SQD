@@ -1,0 +1,43 @@
+Loaded: 8 qubits, nelec=(2, 2), exact reference energy=-76.116691
+
+======================================================================
+PART 1: (n_reps=1, optimize=True)
+======================================================================
+CCSD-seeded LUCJ noiseless energy: -76.056149 Ha  (error 60.5415 mHa)
+Amplitude file's own claimed CCSD energy: -76.116597 Ha (error 0.0939 mHa)
+Fraction of shots with correct N_alpha=N_beta: 1.0000
+For comparison, a RANDOM n_reps=1 LUCJ gives: -75.127695 Ha  (error 988.9963 mHa)
+
+======================================================================
+PART 2: Diagnostics -- isolating the source of the discrepancy
+======================================================================
+
+-- Control: zero amplitudes should EXACTLY reproduce Hartree-Fock --
+  zero amplitudes: energy=-76.063572  error=53.1193 mHa
+  (compare to data file's own reference_energy: -76.063572)
+  PASS: matches HF reference -- circuit construction is correct.
+  
+-- Does increasing n_reps help? (rules out 'too few terms') --
+  n_reps=1: energy=-76.067089  error=49.6018 mHa
+  n_reps=2: energy=-76.066867  error=49.8236 mHa
+  n_reps=3: energy=-76.071705  error=44.9858 mHa
+  n_reps=4: energy=-76.075755  error=40.9363 mHa
+
+-- Full exact decomposition, no truncation, no pair restriction --
+  n_reps=None, unrestricted: energy=-76.040864  error=75.8269 mHa
+
+-- Sign / transpose convention checks --
+  sign-flipped (both negated): energy=-75.996369  error=120.3215 mHa
+  t2 with a,b transposed: energy=-76.082422  error=34.2692 mHa
+  t2 with i,j transposed: energy=-76.082422  error=34.2692 mHa
+  t1 transposed: energy=-76.040864  error=75.8269 mHa
+
+-- Isolating t1 vs t2 contributions --
+  t1=0, only t2: energy=-76.041074  error=75.6166 mHa
+  t2=0, only t1: energy=-76.063362  error=53.3293 mHa
+
+If NONE of the above get within ~1 mHa of the claimed CCSD energy
+(-76.116597 Ha, i.e. error 0.0939 mHa),
+this points to a mismatch between the Hamiltonian file's and the
+amplitude file's spatial-orbital ordering/labeling convention --
+not a bug in n_reps, interaction_pairs, or sign convention.
