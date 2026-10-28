@@ -1,0 +1,20 @@
+## RUN ON 23/10/2026, 21:56 ##
+
+Exact sector energy error: -1.24e-08 mHa | HF error: 53.119 mHa
+
+=== local pairs, n_reps=3 ===
+   n_params=85; raw CCSD-seeded error 38.841 mHa
+   seed: error 0.3761 mHa (nit=291)
+   seed+noise0: error 0.3756 mHa (nit=202)
+   seed+noise1: error 0.3837 mHa (nit=270)
+   seed+noise2: error 0.3729 mHa (nit=173)
+   VARIATIONAL error after minimization: 0.3729 mHa
+   circuit energy error 0.3729 mHa | ffsim-subspace error 0.3729 mHa | weight in (Na,Nb) sector = 1.00000000 | <Na>=2.0000 <Nb>=2.0000
+[sim r3] valid-shot fraction 1.0000 | valid distinct bitstrings 1.0000 | unique sampled 12
+[sim r3] samples_per_batch= 5: error 10.7074 +/- 2.9593 mHa (n_seeds=10)
+[sim r3] samples_per_batch=10: error 2.4166 +/- 0.2619 mHa (n_seeds=10)
+[sim r3] samples_per_batch=15: error 0.3647 +/- 0.0000 mHa (n_seeds=10)
+[sim r3] samples_per_batch=20: error 0.3647 +/- 0.0000 mHa (n_seeds=10)
+[sim r3] samples_per_batch=25: error 0.3647 +/- 0.0000 mHa (n_seeds=10)
+[sim r3] samples_per_batch=30: error 0.3647 +/- 0.0000 mHa (n_seeds=10)
+[sim r3] samples_per_batch=36: error 0.3647 +/- 0.0000 mHa (n_seeds=10)
