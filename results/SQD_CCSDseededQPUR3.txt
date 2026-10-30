@@ -1,11 +1,13 @@
 backend: ibm_phoenix
-   ffsim LUCJ pass manager: 2Q depth=51, total depth=236
-   preset opt-level 3: 2Q depth=74, total depth=361
-USING ffsim LUCJ pass manager: 2Q depth=51, gate counts={'sx': 485, 'rz': 432, 'cz': 160, 'measure': 8, 'x': 3, 'barrier': 1}
-physical layout (logical qubit i -> physical qubit): [104, 103, 102, 101, 114, 113, 112, 111]
+OrderedDict({'sx': 479, 'rz': 440, 'cz': 160, 'measure': 8, 'x': 5, 'barrier': 1}) | 2Q depth: 51
 
 ## RUN SUBMITTED ON 23/10/2026, 00:10 ##
 ## RUN COMPLETED ON 23/10/2026, 11:58 ##
+ALL TIMES IN IST
+
+shot count=10000
+
+r3 [114, 113, 112, 111, 104, 103, 102, 101] (from circuit layout)
 
 job id: dbd5hdni0auc7394o400
 
